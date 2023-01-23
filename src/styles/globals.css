@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;0,700;1,400&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,10 +9,16 @@
     @apply max-w-[1440px] sm:px-[24px] md:px-[32px] mx-auto lg:px-[64px] xl:px-[128px] grid grid-cols-12 gap-[24px];
   }
   header {
-    @apply max-w-[1440px] sm:px-[24px] md:px-[32px] mx-auto lg:px-[64px] xl:px-[128px];
+    @apply max-w-[1440px] sm:px-[24px] md:px-[32px] mx-auto lg:px-[64px] xl:px-[128px] w-screen;
   }
   footer {
-    @apply max-w-[1440px] sm:px-[24px] md:px-[32px] mx-auto lg:px-[64px] xl:px-[128px];
+    @apply max-w-[1440px] sm:px-[24px] md:px-[32px] mx-auto lg:px-[64px] xl:px-[128px] w-screen;
+  }
+}
+
+@layer components {
+  .responsive {
+    @apply grid grid-cols-12 gap-[24px];
   }
 }
 
@@ -22,6 +30,7 @@
 
 html,
 body {
+  font-family: "Mulish";
   max-width: 100vw;
   overflow-x: hidden;
 }

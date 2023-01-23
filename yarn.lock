@@ -55,6 +55,67 @@
   "resolved" "https://registry.npmjs.org/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz"
   "version" "1.2.1"
 
+"@iconify/icons-carbon@^1.2.15":
+  "integrity" "sha512-eTuylQU2M9u2DWCQsLHA40mESCZ6ck69/RIcqsXw7LCAWX1MiYnmr1BbdXcJ18d2ba24w3UNwxAFNvVIIVtHRg=="
+  "resolved" "https://registry.npmjs.org/@iconify/icons-carbon/-/icons-carbon-1.2.15.tgz"
+  "version" "1.2.15"
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify/icons-ic@^1.2.13":
+  "integrity" "sha512-TphrhwOvgd7CTmUhz6jgXF+SPnMtvTm03bZsAYbny2kwq4zlkhr9e16YEyPGMvKhjtTqNooA3iZ9Wa+pZ8moXQ=="
+  "resolved" "https://registry.npmjs.org/@iconify/icons-ic/-/icons-ic-1.2.13.tgz"
+  "version" "1.2.13"
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify/icons-material-symbols@^1.2.25":
+  "integrity" "sha512-Sbr0058ROI94VmF8pi73x8DYABi5s3ttq9ugl4yP041X2oxr9H79VrqbT0rpN04ssYNAUQO7gw5VdCit4C71Jw=="
+  "resolved" "https://registry.npmjs.org/@iconify/icons-material-symbols/-/icons-material-symbols-1.2.25.tgz"
+  "version" "1.2.25"
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify/icons-mdi@^1.2.39":
+  "integrity" "sha512-h/OtUCOIfbgDUzmLuQLr3KhBmQqaCeub6Q5jHoiCnZiV/i9s8KsOgFBInX8dq0kjzLPP1tSij7UuMcnMshmc9g=="
+  "resolved" "https://registry.npmjs.org/@iconify/icons-mdi/-/icons-mdi-1.2.39.tgz"
+  "version" "1.2.39"
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify/icons-mingcute@^1.2.3":
+  "integrity" "sha512-RHvCKK4kgUOCLd+6FCzGE+zzlIg/hm80P+yduufRiINoIRtqZVfZZcWHgEqUHGzx5bhL8pSzBzTHzWshz6vy9A=="
+  "resolved" "https://registry.npmjs.org/@iconify/icons-mingcute/-/icons-mingcute-1.2.3.tgz"
+  "version" "1.2.3"
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify/icons-ph@^1.2.3":
+  "integrity" "sha512-aboyiW3ITc+DY6tKiVAzmkg77QqB15VnmKHVFc3Iwt0rdq/76WIzRDYVSvNXjsPJkO1TLWkGAxuREfvToXMUaA=="
+  "resolved" "https://registry.npmjs.org/@iconify/icons-ph/-/icons-ph-1.2.3.tgz"
+  "version" "1.2.3"
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify/icons-tabler@^1.2.56":
+  "integrity" "sha512-yCT4qUpShIhLpZwr6N/r/TUPSoJF78vdSvAGe5HG26DX51DutlQ6J16YBitO9jN6VxuiFGvplm31Owo/UxAJMA=="
+  "resolved" "https://registry.npmjs.org/@iconify/icons-tabler/-/icons-tabler-1.2.56.tgz"
+  "version" "1.2.56"
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify/react@^4.0.1":
+  "integrity" "sha512-/DBJqh5K7W4f+d4kpvyJa/OTpVa3GfgrE9bZFAKP0vIWDr0cvVU9MVvbbkek216w9nLQhpJY/FeJtc6izB1PHw=="
+  "resolved" "https://registry.npmjs.org/@iconify/react/-/react-4.0.1.tgz"
+  "version" "4.0.1"
+  dependencies:
+    "@iconify/types" "^2.0.0"
+
+"@iconify/types@*", "@iconify/types@^2.0.0":
+  "integrity" "sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg=="
+  "resolved" "https://registry.npmjs.org/@iconify/types/-/types-2.0.0.tgz"
+  "version" "2.0.0"
+
 "@motionone/animation@^10.15.1":
   "integrity" "sha512-mZcJxLjHor+bhcPuIFErMDNyrdb2vJur8lSfMCsuCB4UyV8ILZLvK+t+pg56erv8ud9xQGK/1OGPt10agPrCyQ=="
   "resolved" "https://registry.npmjs.org/@motionone/animation/-/animation-10.15.1.tgz"
@@ -1928,7 +1989,7 @@
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   "version" "16.13.1"
 
-"react@^18.0.0", "react@^18.2.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@18.2.0":
+"react@^18.0.0", "react@^18.2.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=16", "react@18.2.0":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"

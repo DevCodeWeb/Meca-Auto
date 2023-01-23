@@ -6,35 +6,36 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 // Shared
-// import DropMobile from "./DropMobile";
+import { DropMobile } from "./Drop";
 
-export default function Header() {
+export const Header = () => {
   const [scroll, setScroll] = useState(false);
   const [mobile, setMobile] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      setScroll(window.scrollY > 10);
+      setScroll(window.scrollY > 100);
     });
   }, []);
 
   return (
-    <div
+    <header
       className={`${
-        scroll ? "bg-white  hover:shadow-lg" : "bg-transparent"
-      } duration-200 fixed top-0 w-screen h-[60px] flex items-center justify-between z-50 xxl:px-[768px] xl:px-[256px] lg:px-[128px] md:px-[64px] sm:px-[40px] xs:px-[24px]`}
+        scroll
+          ? "backdrop-blur-lg text-white shadow-xl hover:shadow-lg"
+          : "bg-transparent text-green"
+      } duration-200 fixed top-0 h-[60px] flex items-center justify-between z-50 `}
     >
       <Link href="/">
-        <h1 className="text-xl font-bold duration-300 cursor-pointer text-green">
+        <h1 className="text-xl font-bold duration-300 cursor-pointer ">
           Meca Auto
         </h1>
       </Link>
       <div className="flex gap-[25px] xs:hidden sm:hidden">
         <a href="#services">
           <div
-            className={`${
-              scroll ? " hover:text-darkGrey" : "hover:text-white"
-            } text-green flex flex-col items-center rounded-md hover:gap-[5px] gap-[2px] duration-300 cursor-pointer`}
+            className={`
+            } flex flex-col items-center rounded-md hover:gap-[5px] gap-[2px] duration-300 cursor-pointer`}
           >
             <motion.h3
               whileHover={{ scale: 1.1 }}
@@ -46,9 +47,8 @@ export default function Header() {
         </a>
         <a href="#cars">
           <div
-            className={`${
-              scroll ? " hover:text-darkGrey" : "hover:text-white"
-            } text-green flex flex-col items-center rounded-md hover:gap-[5px] gap-[2px] duration-300 cursor-pointer`}
+            className={`
+            }  flex flex-col items-center rounded-md hover:gap-[5px] gap-[2px] duration-300 cursor-pointer`}
           >
             <motion.h3
               whileHover={{ scale: 1.1 }}
@@ -60,9 +60,8 @@ export default function Header() {
         </a>
         <a href="#adress">
           <div
-            className={`${
-              scroll ? " hover:text-darkGrey" : "hover:text-white"
-            } text-green flex flex-col items-center rounded-md hover:gap-[5px] gap-[2px] duration-300 cursor-pointer`}
+            className={`
+            } flex flex-col items-center rounded-md hover:gap-[5px] gap-[2px] duration-300 cursor-pointer`}
           >
             <motion.h3
               whileHover={{ scale: 1.1 }}
@@ -74,9 +73,8 @@ export default function Header() {
         </a>
         <a href="#contact">
           <div
-            className={`${
-              scroll ? " hover:text-darkGrey" : "hover:text-white"
-            } text-green flex flex-col items-center rounded-md hover:gap-[5px] gap-[2px] duration-300 cursor-pointer`}
+            className={`
+            } flex flex-col items-center rounded-md hover:gap-[5px] gap-[2px] duration-300 cursor-pointer`}
           >
             <motion.h3
               whileHover={{ scale: 1.1 }}
@@ -129,6 +127,6 @@ export default function Header() {
           </div>
         </div>
       </div>
-    </div>
+    </header>
   );
-}
+};
