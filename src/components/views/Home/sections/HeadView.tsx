@@ -33,8 +33,8 @@ export const HeadView = () => {
   ];
 
   return (
-    <section className="bg-mechanic py-[200px]">
-      <div className="flex flex-col pt-[12px] shadow-xl items-center justify-center col-span-12 backdrop-blur-sm bg-transLightGrey rounded-2xl">
+    <section className="bg-mechanic py-[200px] sm:py-[70px]">
+      <div className="flex flex-col pt-[12px] shadow-xl items-center justify-center col-span-12 backdrop-blur-sm px-[24px] bg-transLightGrey rounded-2xl">
         <div className="flex items-center">
           Certifié partenaire &nbsp;
           <img
@@ -43,17 +43,17 @@ export const HeadView = () => {
             className="h-[28px]"
           />
         </div>
-        <div className="flex items-center mt-[12px] justify-center col-span-12 bg-green rounded-2xl w-[110%] mb-[32px] py-[32px] shadow-lg flex-col">
+        <div className="flex items-center mt-[12px] justify-center text-center col-span-12 bg-green rounded-2xl w-[110%] mb-[32px] py-[32px] shadow-lg flex-col">
           <h1 className="text-[60px] font-extrabold">GARAGE MECA AUTO</h1>
           <h2 className="text-[24px] font-bold">
             REPARATION, ENTRETIEN, CARROSERIE
           </h2>
         </div>
-        <p className="text-[20px]">
+        <p className="text-[20px] sm:text-center md:text-center">
           Meca Auto spécialiste pour la réparation et l’entretien des voitures
           et utilitaires toutes marques
         </p>
-        <div className="flex gap-[24px] mb-[48px] mt-[24px]">
+        <div className="flex gap-[24px] mb-[48px] mt-[24px] sm:flex-col md:flex-col">
           {services.map((service, i) => {
             return (
               <Button

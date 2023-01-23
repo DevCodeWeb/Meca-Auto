@@ -21,8 +21,8 @@ export const Services = () => {
             />
           );
         })}
-        <div className="col-span-6 mb-[48px] col-start-4 hover:shadow-xl duration-150 bg-white rounded-2xl text-darkGrey p-[24px] flex flex-col gap-[10px]">
-          <div className="flex justify-between">
+        <div className="col-span-6 md:col-span-12 sm:col-span-12 mb-[48px] col-start-4 hover:shadow-xl duration-150 bg-white rounded-2xl text-darkGrey p-[24px] flex flex-col gap-[10px]">
+          <div className="flex justify-between sm:flex-col sm:text-center sm:items-center">
             <div className="flex flex-col">
               <h4>Besoin de plus d'informations ?</h4>
               <h3 className="font-bold text-[24px]">Contactez-nous</h3>
